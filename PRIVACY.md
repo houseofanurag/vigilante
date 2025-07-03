@@ -1,6 +1,6 @@
 # Privacy Policy for Vigilante Security Scanner  
 
-**Last Updated:** [Date]  
+**Last Updated:** [03July' 2025]  
 
 ## 🔒 Data Collection  
 Vigilante **does not collect, store, or transmit** any of the following:  
