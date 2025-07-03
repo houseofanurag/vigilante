@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Vigilante Scanner</title>
+  <link rel="stylesheet" href="popup.css">
+  <!-- Load PDF libraries first -->
+  <script src="/lib/jspdf.umd.min.js"></script>
+  <script src="/lib/html2canvas.min.js"></script>
+  <!-- Load Chart.js as a classic script -->
+  <script src="/lib/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="/icons/icon48.png" class="logo" alt="Vigilante">
+      <h1>Security Scan</h1>
+    </div>
+    <button id="scan-btn" class="scan-button">
+      <span class="button-text">Scan This Page</span>
+      <span class="spinner"></span>
+    </button>
+    <button id="download-btn" class="download-button" disabled>
+      <img src="/icons/download.png" class="download-icon" alt="Download">
+      <span class="button-text">Download Report</span>
+    </button>
+    <div id="loading" class="loading-state" style="display: none;">
+      <div class="loading-spinner"></div>
+      <p>Scanning page...</p>
+    </div>
+    <div id="scan-status" class="status-message"></div>
+    <div id="results" class="results-container"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

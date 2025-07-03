@@ -1,0 +1,267 @@
+body {
+  width: 340px;
+  padding: 16px;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  color: #202124;
+  background: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.scan-button {
+  width: 100%;
+  padding: 12px 16px;
+  background: #6E07F3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.scan-button:hover {
+  background: #5a06cc;
+}
+
+.scan-button:disabled {
+  background: #9e7fd8;
+  cursor: not-allowed;
+}
+
+.button-text {
+  font-size: 14px;
+}
+
+.spinner {
+  display: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 3px solid #6E07F3;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+.status-message {
+  margin: 16px 0;
+  font-size: 13px;
+  text-align: center;
+  min-height: 20px;
+}
+
+.welcome-message {
+  text-align: center;
+  color: #5f6368;
+  font-size: 13px;
+  padding: 20px 0;
+}
+
+.results-container {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-top: 16px;
+}
+
+.test-result {
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  background: #f8f9fa;
+}
+
+.test-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.test-name {
+  font-weight: 600;
+  color: #202124;
+}
+
+.test-status {
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.status-pass {
+  background: #e6f4ea;
+  color: #137333;
+}
+
+.status-fail {
+  background: #fce8e6;
+  color: #a50e0e;
+}
+
+.status-na {
+  background: #f1f3f4;
+  color: #5f6368;
+}
+
+.test-description {
+  font-size: 12px;
+  color: #5f6368;
+  margin-bottom: 8px;
+}
+
+.test-details {
+  font-size: 13px;
+  margin: 8px 0;
+}
+
+.test-severity {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  margin-left: 6px;
+}
+
+.severity-high {
+  background: #d93025;
+  color: white;
+}
+
+.severity-medium {
+  background: #f9ab00;
+  color: #202124;
+}
+
+.test-fix {
+  padding: 8px;
+  background: #f1f3f4;
+  border-radius: 4px;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.test-fix strong {
+  color: #202124;
+}
+
+/* Add to existing CSS */
+
+.status-warn {
+  background: #fef7e0;
+  color: #f9ab00;
+}
+
+.test-result.error {
+  border-left: 3px solid #b80672;
+}
+
+.severity-critical {
+  background: #b80672;
+  color: white;
+}
+
+.test-fix a {
+  color: #6E07F3;
+  word-break: break-all;
+}
+
+.loading-state {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.loading-state p {
+  margin-top: 10px;
+  color: #5f6368;
+}
+
+.download-button {
+  width: 100%;
+  padding: 8px 16px;
+  background: #f1f3f4;
+  color: #202124;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+  transition: all 0.2s;
+}
+
+.download-button:hover {
+  background: #e0e0e0;
+}
+
+.download-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.download-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.pdf-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.pdf-loading-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
