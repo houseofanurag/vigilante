@@ -21,4 +21,4 @@ Vigilante **does not collect, store, or transmit** any of the following:
 Updates will be posted here. Major changes will be announced via GitHub releases.  
 
 ## ❓ Contact  
-For questions, open a [GitHub Issue](https://github.com/yourusername/vigilante/issues) or email [you@example.com].  
+For questions, open a [GitHub Issue](https://github.com/houseofanurag/vigilante/issues) or email [na].  
