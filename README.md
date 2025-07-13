@@ -14,7 +14,7 @@ A Chrome extension that scans websites for security vulnerabilities (outdated li
 1. **Load unpacked in Chrome**:  
    - Go to `chrome://extensions` → Enable **Developer Mode** → **Load Unpacked** → Select this folder.  
 
-2. **From Chrome Web Store** *(Coming Soon)*  
+2. **From Chrome Web Store**  → https://chromewebstore.google.com/detail/cpkgpmjflhgbaboncdibohajilmdcpjd?utm_source=item-share-cb 
 
 ## 🛠 Development  
 ```bash
